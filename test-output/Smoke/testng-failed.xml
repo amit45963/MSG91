@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://api.msg91.com"/>
+  <test thread-count="5" name="Smoke(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.nitara.MSG91.MSG91CheckBalance">
+        <methods>
+          <include name="msg91CheckBalance" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.nitara.MSG91.MSG91CheckBalance -->
+    </classes>
+  </test> <!-- Smoke(failed) -->
+</suite> <!-- Failed suite [Smoke] -->

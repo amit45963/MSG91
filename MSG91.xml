@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke">
+<parameter name="url" value="https://api.msg91.com" />
+
+<test name="Smoke" preserve-order="true">  
+<groups>  
+<run>  
+<include name="Smoke"/>  
+</run>  
+</groups> 
+<classes>
+
+<class name="com.nitara.MSG91.MSG91CheckBalance"/>
+
+
+</classes>
+ </test> <!-- Test -->
+</suite> <!-- Suite -->
