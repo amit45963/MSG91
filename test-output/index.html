@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Smoke" class="navigator-link">
-              <span class="suite-name border-failed">Smoke</span>
+              <span class="suite-name border-passed">Smoke</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Smoke" class="hide-methods failed suite-Smoke"> (hide)</a> <!-- hide-methods failed suite-Smoke -->
-                      <a href="#" panel-name="suite-Smoke" class="show-methods failed suite-Smoke"> (show)</a> <!-- show-methods failed suite-Smoke -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Smoke" class="hide-methods passed suite-Smoke"> (hide)</a> <!-- hide-methods passed suite-Smoke -->
+                      <a href="#" panel-name="suite-Smoke" class="show-methods passed suite-Smoke"> (show)</a> <!-- show-methods passed suite-Smoke -->
                     </span>
-                    <div class="method-list-content failed suite-Smoke">
+                    <div class="method-list-content passed suite-Smoke">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Smoke" title="com.nitara.MSG91.MSG91CheckBalance" class="method navigator-link" hash-for-method="msg91CheckBalance(https://api.msg91.com)">msg91CheckBalance(https://api.msg91.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Smoke -->
+                    </div> <!-- method-list-content passed suite-Smoke -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Smoke" class="panel Smoke">
-          <div class="suite-Smoke-class-failed">
+          <div class="suite-Smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.nitara.MSG91.MSG91CheckBalance</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -131,18 +131,10 @@
                   </a> <!-- msg91CheckBalance(https://api.msg91.com) -->
                   <span class="method-name">msg91CheckBalance</span>
                   <span class="parameters">(https://api.msg91.com)</span>
-                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;{&quot;msg&quot;:&quot;418&quot;,&quot;msgType&quot;:&quot;error&quot;}&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at com.nitara.MSG91.MSG91CheckBalance.msg91CheckBalance(MSG91CheckBalance.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Smoke-class-failed -->
+          </div> <!-- suite-Smoke-class-passed -->
         </div> <!-- panel Smoke -->
         <div panel-name="test-xml-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -213,12 +205,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'msg91CheckBalance')
 data.setCell(0, 2, 'com.nitara.MSG91.MSG91CheckBalance')
-data.setCell(0, 3, 8587);
+data.setCell(0, 3, 2116);
 window.suiteTableData['Smoke']= { tableData: data, tableDiv: 'times-div-Smoke'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Smoke">
               </div> <!-- times-div-Smoke -->
             </div> <!-- times-div -->
@@ -246,8 +238,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.nitara.MSG91.MSG91CheckBalance</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">msg91CheckBalance(https://api.msg91.com)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->

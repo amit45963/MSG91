@@ -42,7 +42,8 @@ public class MSG91CheckBalance extends GenericBase{
 		
 		double balance = Double.parseDouble(title);
 		
-		
+		System.out.println("Hi Team");
+		System.out.println("Hi All," + '\n' );
 		
 		if(balance<2000.0) {
 			System.out.println("Current Wallet Balance of MSG91 : " + balance + 
@@ -53,6 +54,10 @@ public class MSG91CheckBalance extends GenericBase{
 			System.out.println("Current Wallet Balance of MSG91 : " + balance + '\n' +
 					"Currently No Action is Required on MSG91 Wallet Balance.");
 		}
+		
+		
+		System.out.println('\n' + "Regards" + '\n' + "Amit Kumar");
+		System.out.println("Thanks");
 			
 		
 	}
