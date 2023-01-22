@@ -26,7 +26,7 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						<suiteXmlFile>MSG91.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
